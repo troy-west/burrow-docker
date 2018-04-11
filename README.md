@@ -7,7 +7,7 @@ Docker compose file supporting [Burrow](https://github.com/linkedin/Burrow) and 
 Four required environment variables:
 1. KAFKA_VERSION= the version of Kafka you are using in your cluster
 2. KAFKA_BROKERS= a comma seperated list of the host and port ("host:port") of your Kafka brokers
-3. ZOOKEEPER_SERVERS= a comma seperated list of the host and port ("host:port") of your Zookeeper servers, in quotes
+3. ZOOKEEPER_SERVERS= a comma seperated list of the host and port ("host:port") of your Zookeeper servers
 4. ZOOKEEPER_PATH= a full path to the znode that Burrow is allow to write under, in quotes. The path will be created if it does not already exist.
 
 e.g.
