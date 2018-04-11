@@ -1,0 +1,17 @@
+version: '2.2'
+services:
+    burrow:
+        image: joway/docker-burrow
+        ports:
+          - "8000:8000"
+        environment:
+          - KAFKA_VERSION=${KAFKA_VERSION}
+          - KAFKA_BROKERS=${KAFKA_BROKERS}
+          - ZOOKEEPER_SERVERS=${ZOOKEEPER_SERVERS}
+          - ZOOKEEPER_PATH=${ZOOKEEPER_PATH}
+    burrow-dashboard:
+        image: joway/burrow-dashboard:latest
+        ports:
+          - "8080:80"
+        environment:
+          - BURROW_BACKEND=http://burrow:8000
