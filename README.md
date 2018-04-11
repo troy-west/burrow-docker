@@ -1,6 +1,6 @@
 # docker-burrow
 
-Docker compose file supporting Burrow and Burrow Dashboard in the same network
+Docker compose file supporting [Burrow](https://github.com/linkedin/Burrow) and [Burrow Dashboard](https://github.com/joway/burrow-dashboard) in the same network
 
 # run
 
@@ -18,5 +18,5 @@ KAFKA_VERSION=1.0.0 KAFKA_BROKERS=\"localhost:9092\" ZOOKEEPER_SERVERS=\"localho
 
 # behold
 
-Burrow @ http://localhost:8000
+Burrow @ http://localhost:8000 <br>
 Burrow Dashboard @ http://localhost:8080
